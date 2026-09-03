@@ -43,9 +43,9 @@ export default async function SearchPage({
           <div className="glass p-8 text-center">
             <p className="text-white/60">
               No matches for “{q}” yet. Try a broader term like
-              <Link href="/search?q=animation" className="mx-1 text-cyanx hover:underline">animation</Link>,
-              <Link href="/search?q=backend" className="mx-1 text-cyanx hover:underline">backend</Link>, or
-              <Link href="/search?q=AI" className="mx-1 text-cyanx hover:underline">AI</Link>.
+              <Link href="/search?q=animation" className="mx-1 text-glint hover:underline">animation</Link>,
+              <Link href="/search?q=backend" className="mx-1 text-glint hover:underline">backend</Link>, or
+              <Link href="/search?q=AI" className="mx-1 text-glint hover:underline">AI</Link>.
             </p>
           </div>
         )}

@@ -30,7 +30,7 @@ export default function SearchBar({ autoFocus = false }: { autoFocus?: boolean }
         e.preventDefault();
         router.push(`/search?q=${encodeURIComponent(q)}`);
       }}
-      className="glass flex w-full max-w-2xl items-center gap-2 p-2 shadow-[0_0_60px_-15px_rgba(139,92,246,0.6)] focus-within:border-accent/70"
+      className="glass flex w-full max-w-2xl items-center gap-2 p-2 shadow-[0_0_60px_-15px_rgba(212,175,55,0.55)] focus-within:border-gold/70"
     >
       <span className="pl-3 text-white/40">🔍</span>
       <input
@@ -43,7 +43,7 @@ export default function SearchBar({ autoFocus = false }: { autoFocus?: boolean }
       />
       <button
         type="submit"
-        className="rounded-xl bg-gradient-to-r from-accent to-cyanx px-6 py-2 text-sm font-semibold text-black transition hover:brightness-110 active:scale-95"
+        className="rounded-xl bg-gradient-to-r from-goldlight to-gold px-6 py-2 text-sm font-semibold text-black transition hover:brightness-110 active:scale-95"
       >
         Search
       </button>

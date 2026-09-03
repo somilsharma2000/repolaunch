@@ -15,8 +15,8 @@ export default function RepoCard({ repo }: { repo: Repo }) {
           <h3 className="text-lg font-bold">{repo.name}</h3>
         </div>
         {repo.isBestPick && (
-          <span className="rounded-full bg-cyanx/15 px-2 py-0.5 text-xs font-semibold text-cyanx">
-            ★ Best pick
+          <span className="rounded-full border border-gold/40 bg-gold/15 px-2 py-0.5 text-xs font-semibold text-goldlight">
+            👑 Best pick
           </span>
         )}
       </div>

@@ -14,7 +14,7 @@ export default function CategoriesPage() {
           <Link key={c.slug} href={`/category/${c.slug}`} className="glass card-hover fade-up p-5">
             <h3 className="font-semibold">{c.name}</h3>
             <p className="mt-1 line-clamp-2 text-xs text-white/50">{c.description}</p>
-            <p className="mt-3 text-xs text-cyanx">{getNichesByCategory(c.slug).length} niches →</p>
+            <p className="mt-3 text-xs text-glint">{getNichesByCategory(c.slug).length} niches →</p>
           </Link>
         ))}
       </div>

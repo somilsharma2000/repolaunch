@@ -36,7 +36,7 @@ export default function ForgePage() {
   return (
     <div className="mx-auto flex min-h-screen max-w-2xl flex-col px-4 py-16">
       <div className="flex items-center gap-3">
-        <span className="grid h-10 w-10 place-items-center rounded-xl bg-gradient-to-br from-accent to-cyanx">🔥</span>
+        <span className="grid h-10 w-10 place-items-center rounded-xl bg-gradient-to-br from-goldlight to-gold text-black">🔥</span>
         <div>
           <h1 className="text-xl font-bold">Forge AI</h1>
           <p className="text-xs text-white/40">3 free questions · unlimited with Lifetime</p>
@@ -48,7 +48,7 @@ export default function ForgePage() {
           <div
             key={i}
             className={`max-w-[85%] rounded-2xl px-4 py-2 text-sm ${
-              m.role === "forge" ? "bg-card text-white/80" : "ml-auto bg-accent/20 text-white"
+              m.role === "forge" ? "bg-card text-white/80" : "ml-auto bg-gold/20 text-white"
             }`}
           >
             {m.text}
@@ -74,7 +74,7 @@ export default function ForgePage() {
           placeholder="Ask Forge anything…"
           className="flex-1 bg-transparent px-2 py-2 text-sm outline-none placeholder:text-white/30"
         />
-        <button type="submit" className="rounded-xl bg-gradient-to-r from-accent to-cyanx px-5 py-2 text-sm font-semibold text-black">
+        <button type="submit" className="rounded-xl bg-gradient-to-r from-gold to-bronze px-5 py-2 text-sm font-semibold text-black">
           Send
         </button>
       </form>

@@ -30,3 +30,12 @@ GitHub API (existence, stars, license) is the single source of truth for repo fa
 - **Add niches/categories:** append to `src/data/taxonomy.json`
 - **Payments:** wire Stripe Checkout in `/pricing` and flip the paywall check in `src/components/BlueprintView.tsx` from localStorage-demo to a server-verified session
 - **Forge:** set an LLM API key and implement `src/app/api/forge/route.ts` — the UI is ready
+
+## Visual design language (crown/obsidian-gold)
+The brand identity is built around the crown logo (`public/crown-logo.png`, also used as the favicon via `src/app/icon.png`): black obsidian crystal facets with polished gold/bronze metallic edges — a premium, "you're paying for a crown, not just code" feel.
+
+- **Colors** (`tailwind.config.ts`): `base` (#0a0908 obsidian), `card` (#141210 charcoal), `line` (#3a2f1c bronze border), `gold`/`goldlight`/`bronze` (the metal palette), `glint` (#7ea8c4 — the faint cool sheen visible in the crystal facets, used sparingly for code blocks/step numbers).
+- **Shapes**: `.facet` in `globals.css` replaces the old blurred gradient "orbs" with clip-path pentagon/diamond shards echoing the crown's crystal geometry — drifting slowly, low opacity.
+- **Typography accents**: `.gradient-text` is a gold shimmer (goldlight → gold → bronze), used for hero headlines and stat numbers.
+- **Iconography**: 👑 marks anything premium/lifetime (CTA buttons, "Best pick" badges, pricing's "Crown Tier" label).
+- When adding new UI, reuse `gold`/`goldlight`/`bronze`/`glint` tokens — never reintroduce purple/violet/cyan, that was the old (retired) direction.

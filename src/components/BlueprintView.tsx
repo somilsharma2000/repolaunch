@@ -107,7 +107,7 @@ export default function BlueprintView({ repo, related }: { repo: Repo; related: 
           {repo.configFiles.map((f) => (
             <section key={f.filename} className="glass p-6">
               <h2 className="font-semibold">📋 {f.filename}</h2>
-              <pre className="mt-3 overflow-x-auto rounded-xl border border-line bg-black/40 p-4 text-xs leading-relaxed text-cyanx">
+              <pre className="mt-3 overflow-x-auto rounded-xl border border-line bg-black/40 p-4 text-xs leading-relaxed text-glint">
                 {f.code}
               </pre>
             </section>
@@ -119,7 +119,7 @@ export default function BlueprintView({ repo, related }: { repo: Repo; related: 
               {repo.playbooks.map((p) => (
                 <div key={p.title} className="rounded-xl border border-line p-4">
                   <div className="flex flex-wrap items-center justify-between gap-2">
-                    <h3 className="font-semibold text-cyanx">{p.title}</h3>
+                    <h3 className="font-semibold text-glint">{p.title}</h3>
                     <span className="text-xs text-white/40">First revenue: {p.timeToRevenue}</span>
                   </div>
                   <p className="mt-1 text-xs text-white/50">👤 {p.customer}</p>
