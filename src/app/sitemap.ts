@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { getCategories, getNiches, getPublishedRepos } from "@/lib/data";
 
-const BASE = "https://repolaunch.app";
+const BASE = process.env.NEXT_PUBLIC_SITE_URL || "https://somilsharma2000.github.io/repolaunch";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const routes: MetadataRoute.Sitemap = [
@@ -18,3 +18,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     routes.push({ url: `${BASE}/repo/${r.slug}`, changeFrequency: "weekly", priority: 0.9 });
   return routes;
 }
+
+export const dynamic = "force-static";

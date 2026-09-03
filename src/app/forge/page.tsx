@@ -26,10 +26,11 @@ export default function ForgePage() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ message: text }),
       });
+      if (!res.ok) throw new Error("forge unavailable");
       const data = await res.json();
       setMessages((m) => [...m, { role: "forge", text: data.reply }]);
     } catch {
-      setMessages((m) => [...m, { role: "forge", text: "Hmm, connection hiccup — try again in a sec." }]);
+      setMessages((m) => [...m, { role: "forge", text: "Forge AI goes live with the full launch (LLM backend coming in Phase 2). Meanwhile — every blueprint has full setup + monetization steps. Try the search! 🔎" }]);
     }
   };
 
