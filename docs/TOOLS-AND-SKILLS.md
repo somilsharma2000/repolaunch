@@ -5,9 +5,9 @@
 | Skill / tool | Repo / link | What it does for RepoLaunch | Status |
 |---|---|---|---|
 | webapp-testing (Playwright skill) | github.com/microsoft/playwright | Click through every page like a real user before shipping — required by the vibe-coding playbook | ✅ Installed (Base44 skill `github--webapp-testing`) |
-| SEO optimization skill | — (Base44 skill store) | Programmatic SEO for 124 niche pages: "best open source X" titles, meta, OG images | 🔻 Suggested for install |
-| Stripe payments skill | github.com/stripe/stripe-node | Wire the real $49 Lifetime checkout in Phase 2 (replaces the demo localStorage paywall) | 🔻 Suggested for install |
-| GitHub Actions skill | github.com/actions/awesome-actions | Extend CI: Lighthouse runs, link checks, deploy on push | optional |
+| Research Leads skill | Base44 skill store (`base44--research-leads`) | One-glance profile of any signup/contact — role, ICP fit, outreach angle. Useful when RepoLaunch gets users and we research who's buying and why | ✅ Installed |
+| Stripe payments skill | github.com/stripe/stripe-node | Wire the real $49 Lifetime checkout in Phase 2 (replaces the demo localStorage paywall) | ✅ Installed (`anthropics--stripe-best-practices`) |
+| Claude automation recommender | Base44 skill store (`anthropics--claude-automation-recommender`) | Analyzes this codebase and recommends hooks/subagents/skills for working on it faster | ✅ Installed |
 
 ## Runtime dependencies (already in package.json)
 - Next.js 15 — github.com/vercel/next.js
