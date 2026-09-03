@@ -39,3 +39,13 @@ The brand identity is built around the crown logo (`public/crown-logo.png`, also
 - **Typography accents**: `.gradient-text` is a gold shimmer (goldlight → gold → bronze), used for hero headlines and stat numbers.
 - **Iconography**: 👑 marks anything premium/lifetime (CTA buttons, "Best pick" badges, pricing's "Crown Tier" label).
 - When adding new UI, reuse `gold`/`goldlight`/`bronze`/`glint` tokens — never reintroduce purple/violet/cyan, that was the old (retired) direction.
+
+## Admin section (/admin) — integration hub, analytics, social studio
+Client-side admin (demo state in localStorage until Phase 2 wiring):
+
+- **/admin** — command center: connected/ready counts + quick links
+- **/admin/integrations** — 23 integrations across 7 categories (Payments, Website Analytics, Social, Email & Marketing, SEO, Infra & Hosting, Community & Support). Each card shows what it does, why it matters for RepoLaunch, and the exact Phase 2 wiring (env var / API route). Connect buttons toggle local state now; real OAuth/API wiring lands per-card as accounts are added.
+- **/admin/analytics** — website stats (visitors, pageviews, top niches/searches) + per-platform social overview. Demo data now; GA4 replaces website numbers, social APIs replace follower counts.
+- **/admin/social** — Social Studio: account grid (status synced from integration state), multi-platform composer (draft + targets saved locally), and a pre-written 21-day launch content calendar (src/lib/admin.ts CALENDAR).
+
+Key file: `src/lib/admin.ts` — the integration catalog is the single source of truth for what connects and how.

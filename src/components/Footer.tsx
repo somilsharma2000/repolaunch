@@ -10,6 +10,7 @@ export default function Footer() {
           <Link href="/category" className="hover:text-white">Categories</Link>
           <Link href="/forge" className="hover:text-white">Forge AI</Link>
           <Link href="/pricing" className="hover:text-white">Pricing</Link>
+          <Link href="/admin" className="hover:text-white">Admin</Link>
           <a href="https://github.com/somilsharma2000/repolaunch" className="hover:text-white">GitHub</a>
         </div>
         <p>© 2026 RepoLaunch — every repo verified, every blueprint real.</p>
