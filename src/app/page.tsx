@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import SearchBar from "@/components/SearchBar";
 import { getCategories, siteStats, trendingSearches } from "@/lib/data";
+import { asset } from "@/lib/asset";
 
 const ICONS: Record<string, string> = {
   Layout: "🧩", Sparkles: "✨", Server: "🖥️", Database: "🗄️", BrainCircuit: "🧠",
@@ -25,7 +26,7 @@ export default function HomePage() {
       {/* HERO */}
       <section className="facet-texture relative mx-auto flex max-w-6xl flex-col items-center px-4 pb-20 pt-20 text-center">
         <Image
-          src="/crown-logo.png"
+          src={asset("/crown-logo.png")}
           alt=""
           width={72}
           height={72}
@@ -115,7 +116,7 @@ export default function HomePage() {
       <section className="mx-auto max-w-4xl px-4 pb-24 text-center">
         <div className="glass relative overflow-hidden p-10">
           <div className="facet -top-16 left-1/2 h-56 w-56 -translate-x-1/2" />
-          <Image src="/crown-logo.png" alt="" width={48} height={48} className="relative mx-auto mb-4 opacity-90" />
+          <Image src={asset("/crown-logo.png")} alt="" width={48} height={48} className="relative mx-auto mb-4 opacity-90" />
           <h2 className="relative text-3xl font-bold">
             Every blueprint. Every playbook. <span className="gradient-text">$49 forever.</span>
           </h2>

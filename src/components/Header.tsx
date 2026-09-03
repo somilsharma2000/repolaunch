@@ -1,12 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
+import { asset } from "@/lib/asset";
 
 export default function Header() {
   return (
     <header className="fixed top-0 z-50 w-full border-b border-line/60 bg-base/80 backdrop-blur-lg">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
         <Link href="/" className="flex items-center gap-2 font-bold tracking-tight">
-          <Image src="/crown-logo.png" alt="RepoLaunch" width={28} height={28} className="rounded" />
+          <Image src={asset("/crown-logo.png")} alt="RepoLaunch" width={28} height={28} className="rounded" />
           RepoLaunch
         </Link>
         <nav className="hidden items-center gap-6 text-sm text-white/70 md:flex">

@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import { asset } from "@/lib/asset";
 
 const FREE = ["Search + niche pages", "Repo previews (what it is, where to use it)", "3 Forge AI questions", "Verification checklists"];
 const PAID = ["Everything in Free", "Full setup guides + config files", "3 monetization playbooks per repo", "Unlimited Forge AI", "All future repos included"];
@@ -12,7 +13,7 @@ export default function PricingPage() {
 
   return (
     <div className="mx-auto max-w-4xl px-4 py-16 text-center">
-      <Image src="/crown-logo.png" alt="" width={56} height={56} className="mx-auto mb-4 opacity-95" />
+      <Image src={asset("/crown-logo.png")} alt="" width={56} height={56} className="mx-auto mb-4 opacity-95" />
       <h1 className="text-4xl font-extrabold">
         One payment. <span className="gradient-text">Forever.</span>
       </h1>
