@@ -1,0 +1,29 @@
+name: Nightly star sync
+
+on:
+  schedule:
+    - cron: "30 18 * * *" # 00:00 IST nightly
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm run sync:stars
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Commit updated stars
+        run: |
+          git config user.name "star-sync-bot"
+          git config user.email "actions@github.com"
+          git add src/data/stars.json
+          git diff --cached --quiet && echo "No changes" && exit 0
+          git commit -m "chore: nightly star sync [skip ci]"
+          git push

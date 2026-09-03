@@ -1,0 +1,860 @@
+[
+ {
+  "slug": "anime-js",
+  "owner": "juliangarnier",
+  "name": "anime",
+  "githubUrl": "https://github.com/juliangarnier/anime",
+  "demoUrl": "https://animejs.com",
+  "description": "A lightweight JavaScript animation library with a simple yet powerful API.",
+  "license": "MIT",
+  "licenseType": "safe",
+  "licenseNote": "MIT \u2014 use anime.js in any commercial product with no obligations beyond keeping the copyright notice in the library file.",
+  "techStack": [
+   "JavaScript",
+   "TypeScript"
+  ],
+  "difficulty": "Beginner",
+  "timeToLaunch": "1-2 hours",
+  "nicheSlugs": [
+   "web-animation"
+  ],
+  "isBestPick": true,
+  "stars": 72000,
+  "whatIsIt": "anime.js is a tiny JavaScript library that animates anything on a webpage \u2014 numbers, CSS properties, SVG, DOM attributes \u2014 with a single clean API. You describe what to animate, how long, and with what easing, and it handles the rest.",
+  "whereToUse": [
+   "Hero text that types or fades in letter by letter",
+   "SVG illustrations that draw themselves on scroll",
+   "Number counters that count up when visible",
+   "Micro-interactions on buttons and cards",
+   "Dashboard widgets that animate between states"
+  ],
+  "setup": [
+   "Install: `npm install animejs --save` (v3) or `npm install animejs@4` for the new ESM version",
+   "Import: `import anime from 'animejs'` (v3) or `import { animate } from 'animejs'` (v4)",
+   "Animate any element by passing a CSS selector + target values + duration",
+   "Add easing and delays for sequenced, staggered animations"
+  ],
+  "configFiles": [
+   {
+    "filename": "starter-animation.js",
+    "code": "import anime from 'animejs';\n\n// Staggered entrance for hero elements\nanime({\n  targets: '.hero-el',\n  translateY: [24, 0],\n  opacity: [0, 1],\n  delay: anime.stagger(80),\n  duration: 900,\n  easing: 'easeOutExpo'\n});"
+   }
+  ],
+  "playbooks": [
+   {
+    "title": "Landing page polish service",
+    "customer": "Local businesses & startups with a flat landing page",
+    "pricing": "$300\u2013$800 per page",
+    "steps": [
+     "Find local businesses with static sites (Google Maps + portfolio browsing)",
+     "Send a 30-second Loom showing 3 animations you'd add to THEIR page",
+     "Implement with anime.js in 2\u20134 hours",
+     "Deliver before/after comparison and ask for a testimonial"
+    ],
+    "timeToRevenue": "1\u20132 weeks"
+   },
+   {
+    "title": "Micro-interaction retainer for SaaS",
+    "customer": "SaaS founders whose product feels 'lifeless'",
+    "pricing": "$500\u2013$1,500/month retainer",
+    "steps": [
+     "Pick 5 SaaS in your niche with visible UX friction",
+     "Audit their onboarding/dashboard and list 10 animation quick-wins",
+     "Offer a monthly 'motion retainer': a set of polished interactions per month",
+     "Ship small, visible wins fast \u2014 retention comes from the wow"
+    ],
+    "timeToRevenue": "2\u20134 weeks"
+   },
+   {
+    "title": "Animation template pack",
+    "customer": "Indie devs and freelancers building marketing sites",
+    "pricing": "$19\u2013$49 one-time (Gumroad)",
+    "steps": [
+     "Build 20 drop-in animation snippets (hero, scroll, counter, button)",
+     "Package as a documented .zip with live preview page",
+     "Sell on Gumroad; post the free 5 best ones on X/Reddit as marketing"
+    ],
+    "timeToRevenue": "3\u20136 weeks"
+   }
+  ],
+  "isPublished": true
+ },
+ {
+  "slug": "motion",
+  "owner": "motiondivision",
+  "name": "motion",
+  "githubUrl": "https://github.com/motiondivision/motion",
+  "demoUrl": "https://motion.dev",
+  "description": "The motion library for React and the web \u2014 declarative animations and gestures.",
+  "license": "MIT",
+  "licenseType": "safe",
+  "licenseNote": "MIT \u2014 free for commercial use, including SaaS products.",
+  "techStack": [
+   "TypeScript",
+   "React"
+  ],
+  "difficulty": "Beginner",
+  "timeToLaunch": "1-3 hours",
+  "nicheSlugs": [
+   "web-animation",
+   "page-transitions"
+  ],
+  "isBestPick": false,
+  "stars": 26000,
+  "whatIsIt": "Motion (formerly Framer Motion) is the modern animation engine for React. You describe animations declaratively in JSX \u2014 springs, gestures, layout transitions \u2014 and it keeps everything in sync with React state.",
+  "whereToUse": [
+   "React app page transitions",
+   "Drag-and-drop interactions",
+   "Layout animations when lists reorder",
+   "Hover/tap gestures on cards and buttons"
+  ],
+  "setup": [
+   "Install for React: `npm install motion`",
+   "Import: `import { motion } from 'motion/react'`",
+   "Wrap any element with `<motion.div animate={{ opacity: 1 }} />`",
+   "Add `AnimatePresence` for enter/exit transitions"
+  ],
+  "configFiles": [
+   {
+    "filename": "fade-in.tsx",
+    "code": "'use client';\nimport { motion } from 'motion/react';\n\nexport function FadeIn({ children }: { children: React.ReactNode }) {\n  return (\n    <motion.div initial={{ opacity: 0, y: 12 }}\n      animate={{ opacity: 1, y: 0 }}\n      transition={{ duration: 0.5, ease: 'easeOut' }}>\n      {children}\n    </motion.div>\n  );\n}"
+   }
+  ],
+  "playbooks": [
+   {
+    "title": "Product polish for SaaS teams",
+    "customer": "React SaaS founders",
+    "pricing": "$1,000\u2013$3,000 per project",
+    "steps": [
+     "Demo videos of 'before/after' micro-interactions",
+     "Fixed-price package: 15 interactions across their app",
+     "Deliver in 1\u20132 weeks"
+    ],
+    "timeToRevenue": "2\u20133 weeks"
+   },
+   {
+    "title": "Motion components library (Gumroad)",
+    "customer": "Indie React devs",
+    "pricing": "$29\u2013$79",
+    "steps": [
+     "Build 25 production-ready animated components",
+     "Sell with live preview site",
+     "Market via X build-in-public"
+    ],
+    "timeToRevenue": "4\u20138 weeks"
+   }
+  ],
+  "isPublished": true
+ },
+ {
+  "slug": "auto-animate",
+  "owner": "formkit",
+  "name": "auto-animate",
+  "githubUrl": "https://github.com/formkit/auto-animate",
+  "demoUrl": "https://auto-animate.formkit.com",
+  "description": "A zero-config, drop-in animation utility that adds smooth transitions automatically.",
+  "license": "MIT",
+  "licenseType": "safe",
+  "licenseNote": "MIT \u2014 free for commercial use.",
+  "techStack": [
+   "TypeScript",
+   "Framework-agnostic"
+  ],
+  "difficulty": "Beginner",
+  "timeToLaunch": "< 1 hour",
+  "nicheSlugs": [
+   "web-animation",
+   "micro-interactions"
+  ],
+  "isBestPick": false,
+  "stars": 13000,
+  "whatIsIt": "AutoAnimate adds smooth layout transitions to any app with a single line of code. Wrap a list, and add/remove/reorder animations just work \u2014 no keyframes, no config.",
+  "whereToUse": [
+   "Todo lists and kanban boards",
+   "Search results that update live",
+   "E-commerce cart updates",
+   "Any dynamic list that jumps around today"
+  ],
+  "setup": [
+   "Install: `npm install @formkit/auto-animate`",
+   "Wrap your list parent with the directive/hook for your framework (React: `autoAnimateRef`, Vue: `v-auto-animate`), and list changes animate automatically"
+  ],
+  "configFiles": [
+   {
+    "filename": "animated-list.tsx",
+    "code": "import { autoAnimateRef } from '@formkit/auto-animate/react';\n\nexport function List({ items }: { items: string[] }) {\n  const ref = autoAnimateRef<HTMLUListElement>();\n  return (\n    <ul ref={ref}>\n      {items.map((i) => <li key={i}>{i}</li>)}\n    </ul>\n  );\n}"
+   }
+  ],
+  "playbooks": [
+   {
+    "title": "UX fix-it gigs",
+    "customer": "Web app owners with janky lists",
+    "pricing": "$150\u2013$500 per fix",
+    "steps": [
+     "Find apps with list-removal jank (productivity tools, CRMs)",
+     "Offer a 1-day 'smooth UI' package",
+     "Upsell to broader polish work"
+    ],
+    "timeToRevenue": "1 week"
+   },
+   {
+    "title": "Freelance upsell",
+    "customer": "Your existing freelance clients",
+    "pricing": "Included \u2014 use as a differentiator",
+    "steps": [
+     "Add AutoAnimate to every dynamic list you build",
+     "Show before/after in delivery notes",
+     "Charge premium rates for 'premium feel' work"
+    ],
+    "timeToRevenue": "immediate"
+   }
+  ],
+  "isPublished": true
+ },
+ {
+  "slug": "three-js",
+  "owner": "mrdoob",
+  "name": "three.js",
+  "githubUrl": "https://github.com/mrdoob/three.js",
+  "demoUrl": "https://threejs.org",
+  "description": "The JavaScript 3D library \u2014 WebGL made approachable.",
+  "license": "MIT",
+  "licenseType": "safe",
+  "licenseNote": "MIT \u2014 free for commercial use. Some example assets have their own licenses \u2014 check before shipping.",
+  "techStack": [
+   "JavaScript",
+   "WebGL"
+  ],
+  "difficulty": "Intermediate",
+  "timeToLaunch": "1-2 days",
+  "nicheSlugs": [
+   "3d-webgl"
+  ],
+  "isBestPick": true,
+  "stars": 103000,
+  "whatIsIt": "three.js is the most-used 3D engine on the web. It renders 3D scenes in the browser via WebGL and powers everything from product configurators to immersive landing pages.",
+  "whereToUse": [
+   "3D product configurators for e-commerce",
+   "Interactive hero backgrounds",
+   "Data visualization in 3D",
+   "Browser games and experiences"
+  ],
+  "setup": [
+   "Install: `npm install three`",
+   "Import: `import * as THREE from 'three'`",
+   "Create a scene, camera, and WebGL renderer, then add meshes and a render loop",
+   "Or start from an official example in the repo's examples folder \u2014 the fastest path to something impressive"
+  ],
+  "configFiles": [
+   {
+    "filename": "scene.ts",
+    "code": "import * as THREE from 'three';\n\nconst scene = new THREE.Scene();\nconst camera = new THREE.PerspectiveCamera(75, innerWidth / innerHeight, 0.1, 1000);\nconst renderer = new THREE.WebGLRenderer({ antialias: true });\nrenderer.setSize(innerWidth, innerHeight);\ndocument.body.appendChild(renderer.domElement);\nscene.add(new THREE.Mesh(new THREE.BoxGeometry(), new THREE.MeshNormalMaterial()));\ncamera.position.z = 3;\nrenderer.setAnimationLoop(() => renderer.render(scene, camera));"
+   }
+  ],
+  "playbooks": [
+   {
+    "title": "3D product configurators",
+    "customer": "Brands selling customizable products (furniture, jewelry, tech)",
+    "pricing": "$3,000\u2013$10,000 per configurator",
+    "steps": [
+     "Build one demo configurator for a common product (chairs, watches)",
+     "Pitch brands with 'configurators raise conversion 20\u201340%' case studies",
+     "Deliver embeddable web component"
+    ],
+    "timeToRevenue": "3\u20136 weeks"
+   },
+   {
+    "title": "Immersive landing pages",
+    "customer": "Web3, gaming, and premium startups",
+    "pricing": "$1,500\u2013$5,000 per page",
+    "steps": [
+     "Build a portfolio of 3 animated hero concepts",
+     "Sell 'the page nobody scrolls past'",
+     "Host on your own infra and charge for iterations"
+    ],
+    "timeToRevenue": "2\u20134 weeks"
+   },
+   {
+    "title": "Interactive 3D course",
+    "customer": "Devs who want WebGL jobs",
+    "pricing": "$49\u2013$149 (Gumroad)",
+    "steps": [
+     "Record a project-based course (one full scene build)",
+     "Sell the course + all source files",
+     "Market with free YouTube shorts of the end result"
+    ],
+    "timeToRevenue": "6\u201312 weeks"
+   }
+  ],
+  "isPublished": true
+ },
+ {
+  "slug": "pocketbase",
+  "owner": "pocketbase",
+  "name": "pocketbase",
+  "githubUrl": "https://github.com/pocketbase/pocketbase",
+  "demoUrl": "https://pocketbase.io",
+  "description": "Open-source backend in one file: database, auth, files, and realtime API.",
+  "license": "MIT",
+  "licenseType": "safe",
+  "licenseNote": "MIT \u2014 free for commercial use, including hosted products. You own your data.",
+  "techStack": [
+   "Go",
+   "SQLite"
+  ],
+  "difficulty": "Beginner",
+  "timeToLaunch": "1-3 hours",
+  "nicheSlugs": [
+   "baas",
+   "backend-frameworks"
+  ],
+  "isBestPick": true,
+  "stars": 46000,
+  "whatIsIt": "PocketBase is an entire backend \u2014 SQLite database, auth, file storage, realtime subscriptions, and an auto-generated REST API \u2014 packaged in a single executable file. No servers to babysit, no vendor lock-in.",
+  "whereToUse": [
+   "MVP backends for client apps",
+   "Internal tools for small businesses",
+   "Mobile app backends without the cloud bill",
+   "Any project where Supabase/Firebase costs don't make sense yet"
+  ],
+  "setup": [
+   "Download the binary for your OS from pocketbase.io (or use the Dockerfile below)",
+   "Run `./pocketbase serve --dev` and open the admin UI at 127.0.0.1:8090/_/",
+   "Create collections (tables) and auth rules in the admin UI \u2014 the REST + realtime API is generated automatically",
+   "Deploy: any $5 VPS, `./pocketbase serve` behind a reverse proxy with HTTPS"
+  ],
+  "configFiles": [
+   {
+    "filename": "Dockerfile",
+    "code": "FROM alpine:3.20\nARG PB_VERSION=0.28.4\nADD https://github.com/pocketbase/pocketbase/releases/download/v${PB_VERSION}/pocketbase_${PB_VERSION}_linux_amd64.zip /tmp/pb.zip\nRUN unzip /tmp/pb.zip -d /pb && chmod +x /pb/pocketbase\nEXPOSE 8090\nCMD [\"/pb/pocketbase\", \"serve\", \"--http=0.0.0.0:8090\"]"
+   }
+  ],
+  "playbooks": [
+   {
+    "title": "MVP factory for non-technical founders",
+    "customer": "First-time founders with an app idea and no dev team",
+    "pricing": "$2,000\u2013$5,000 per MVP",
+    "steps": [
+     "Niche down: 'I build booking MVPs for salons' beats 'I build apps'",
+     "Ship a PocketBase-backed MVP in 2\u20133 weeks (auth, CRUD, admin panel are free)",
+     "Hand over the single binary + SQLite file \u2014 zero lock-in is the selling point"
+    ],
+    "timeToRevenue": "2\u20134 weeks"
+   },
+   {
+    "title": "Internal tools for small businesses",
+    "customer": "Businesses tracking work in spreadsheets",
+    "pricing": "$800\u2013$2,500 per tool",
+    "steps": [
+     "Find businesses running on messy spreadsheets (inventory, scheduling)",
+     "Build a simple PocketBase app with their exact fields",
+     "Charge a small monthly hosting fee on top"
+    ],
+    "timeToRevenue": "2\u20133 weeks"
+   },
+   {
+    "title": "Managed PocketBase hosting",
+    "customer": "Devs who want PB without server ops",
+    "pricing": "$5\u2013$20/month per project",
+    "steps": [
+     "Offer 'PocketBase as a service': backups, HTTPS, updates included",
+     "Target indie devs on X/Reddit who ask 'how do I deploy PocketBase?'",
+     "Ops cost per instance is pennies \u2014 margin is huge at scale"
+    ],
+    "timeToRevenue": "4\u20138 weeks"
+   }
+  ],
+  "isPublished": true
+ },
+ {
+  "slug": "supabase",
+  "owner": "supabase",
+  "name": "supabase",
+  "githubUrl": "https://github.com/supabase/supabase",
+  "demoUrl": "https://supabase.com",
+  "description": "The open-source Firebase alternative \u2014 Postgres, auth, storage, realtime, edge functions.",
+  "license": "Apache-2.0",
+  "licenseType": "safe",
+  "licenseNote": "Apache-2.0 \u2014 commercial use allowed. Supabase is open source; the hosted cloud has usage pricing, self-hosting is free.",
+  "techStack": [
+   "PostgreSQL",
+   "TypeScript",
+   "Go"
+  ],
+  "difficulty": "Beginner",
+  "timeToLaunch": "1-2 days",
+  "nicheSlugs": [
+   "baas",
+   "sql",
+   "vector-databases",
+   "authentication"
+  ],
+  "isBestPick": false,
+  "stars": 87000,
+  "whatIsIt": "Supabase gives you a full Postgres database with instant REST and realtime APIs, auth, file storage, and edge functions \u2014 self-hostable or as a managed cloud with a generous free tier.",
+  "whereToUse": [
+   "SaaS backends with auth + database in an afternoon",
+   "Realtime dashboards and collaborative apps",
+   "AI apps needing vector search (pgvector built in)",
+   "Replacing Firebase to escape vendor lock-in"
+  ],
+  "setup": [
+   "Create a project at supabase.com (free tier) \u2014 or self-host via the docker setup in the repo",
+   "Get your project URL + anon key from Settings \u2192 API",
+   "Install the client: `npm install @supabase/supabase-js`",
+   "Define tables in the dashboard, enable Row Level Security, and query with `supabase.from('table').select()`"
+  ],
+  "configFiles": [
+   {
+    "filename": "client.ts",
+    "code": "import { createClient } from '@supabase/supabase-js';\n\nexport const supabase = createClient(\n  process.env.NEXT_PUBLIC_SUPABASE_URL!,\n  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!\n);"
+   }
+  ],
+  "playbooks": [
+   {
+    "title": "Full-stack SaaS builds",
+    "customer": "Startup founders needing auth+DB+storage fast",
+    "pricing": "$3,000\u2013$10,000 per build",
+    "steps": [
+     "Sell speed: 'MVP with auth, DB, and payments in 3 weeks'",
+     "Use Supabase auth + RLS to cut backend time 60%",
+     "Offer a monthly maintenance retainer after launch"
+    ],
+    "timeToRevenue": "3\u20134 weeks"
+   },
+   {
+    "title": "Supabase consulting/audits",
+    "customer": "Teams already on Supabase",
+    "pricing": "$150\u2013$300/hour",
+    "steps": [
+     "Audit their RLS and schema (security sells itself)",
+     "Fix slow queries and missing indexes",
+     "Productize: fixed-price 'Supabase tune-up' package"
+    ],
+    "timeToRevenue": "2\u20134 weeks"
+   }
+  ],
+  "isPublished": true
+ },
+ {
+  "slug": "librechat",
+  "owner": "danny-avila",
+  "name": "LibreChat",
+  "githubUrl": "https://github.com/danny-avila/LibreChat",
+  "demoUrl": "https://librechat.ai",
+  "description": "Self-hosted AI chat with all the model providers, plugins, and multi-user support.",
+  "license": "MIT",
+  "licenseType": "safe",
+  "licenseNote": "MIT \u2014 free for commercial use, including offering it as a hosted service.",
+  "techStack": [
+   "TypeScript",
+   "Node.js",
+   "React",
+   "MongoDB"
+  ],
+  "difficulty": "Intermediate",
+  "timeToLaunch": "2-4 hours",
+  "nicheSlugs": [
+   "llm-chat-ui",
+   "rag-document-chat"
+  ],
+  "isBestPick": true,
+  "stars": 30000,
+  "whatIsIt": "LibreChat is an enhanced ChatGPT clone you host yourself: multiple AI providers (OpenAI, Anthropic, Google, local models via Ollama), multi-user accounts, plugins, web search, and document chat \u2014 all in one polished interface.",
+  "whereToUse": [
+   "Private ChatGPT for teams that care about data control",
+   "AI chat product for a niche (legal, medical, dev docs)",
+   "A polished front-end for local LLMs",
+   "Multi-provider chat for agencies and consultants"
+  ],
+  "setup": [
+   "Clone: `git clone https://github.com/danny-avila/LibreChat.git`",
+   "Copy `.env.example` to `.env` and add your API keys (e.g. OpenAI, or point at Ollama for local models)",
+   "Run `docker compose up -d` \u2014 the app and its database come up together",
+   "Open http://localhost:3080, register the first account, and enable the providers you configured"
+  ],
+  "configFiles": [
+   {
+    "filename": "docker-compose.yml (extract)",
+    "code": "services:\n  api:\n    image: ghcr.io/danny-avila/librechat-api:latest\n    restart: always\n    env_file: .env\n    depends_on: [mongo, meilisearch]\n  client:\n    image: ghcr.io/danny-avila/librechat-client:latest\n    ports: ['3080:3080']\n  mongo:\n    image: mongo:6\n  meilisearch:\n    image: getmeili/meilisearch:latest"
+   }
+  ],
+  "playbooks": [
+   {
+    "title": "Private AI for teams",
+    "customer": "Law firms, clinics, agencies that can't send data to OpenAI",
+    "pricing": "$500\u2013$2,000 setup + $50\u2013$200/month hosting",
+    "steps": [
+     "Target compliance-sensitive firms (legal, healthcare, finance)",
+     "Pitch: 'ChatGPT's features, your data never leaves your building'",
+     "Host on their VPS or a local server; charge monthly care"
+    ],
+    "timeToRevenue": "2\u20133 weeks"
+   },
+   {
+    "title": "Niche AI assistant product",
+    "customer": "A specific profession (e.g. contract review for freelancers)",
+    "pricing": "$10\u2013$30/month subscription",
+    "steps": [
+     "Wrap LibreChat with prompt presets for one profession",
+     "Add their documents via the RAG pipeline",
+     "Sell as a simple niche product; iterate on prompts, not code"
+    ],
+    "timeToRevenue": "4\u20138 weeks"
+   },
+   {
+    "title": "Deployment service for other devs",
+    "customer": "Indie devs who want LibreChat but hate Docker",
+    "pricing": "$99\u2013$199 flat",
+    "steps": [
+     "Offer a 24-hour 'your own ChatGPT' deployment on their VPS",
+     "Document the process; each install takes you < 1 hour at scale",
+     "Upsell model configuration + prompt libraries"
+    ],
+    "timeToRevenue": "1\u20132 weeks"
+   }
+  ],
+  "isPublished": true
+ },
+ {
+  "slug": "lobe-chat",
+  "owner": "lobehub",
+  "name": "lobe-chat",
+  "githubUrl": "https://github.com/lobehub/lobe-chat",
+  "demoUrl": "https://chat-preview.lobehub.com",
+  "description": "An open-source, extensible AI chat framework with a plugin marketplace and beautiful UI.",
+  "license": "Apache-2.0",
+  "licenseType": "safe",
+  "licenseNote": "Apache-2.0 \u2014 commercial use allowed. Some optional cloud/enterprise features are under separate commercial terms \u2014 the open-source core stays permissive.",
+  "techStack": [
+   "TypeScript",
+   "Next.js",
+   "Node.js"
+  ],
+  "difficulty": "Beginner",
+  "timeToLaunch": "1-2 hours",
+  "nicheSlugs": [
+   "llm-chat-ui",
+   "ai-agents"
+  ],
+  "isBestPick": false,
+  "stars": 47000,
+  "whatIsIt": "LobeChat is a polished, open-source AI chat UI with a plugin ecosystem, multi-model support, and a gorgeous out-of-the-box interface. It looks like a commercial product but runs on your machine.",
+  "whereToUse": [
+   "A beautiful front-end for your OpenAI/local models",
+   "Team chat assistant with plugins (search, images, TTS)",
+   "Selling hosted AI chat to clients who judge by looks first"
+  ],
+  "setup": [
+   "Clone: `git clone https://github.com/lobehub/lobe-chat.git && cd lobe-chat`",
+   "Copy `.env.example` to `.env`, add `OPENAI_API_KEY` (or other providers)",
+   "Run `docker compose up -d` (or use the official Docker image directly)",
+   "Open http://localhost:3210"
+  ],
+  "configFiles": [
+   {
+    "filename": "docker-compose.yml (extract)",
+    "code": "services:\n  lobe-chat:\n    image: lobehub/lobe-chat:latest\n    ports: ['3210:3210']\n    environment:\n      OPENAI_API_KEY: ${OPENAI_API_KEY}\n    restart: always"
+   }
+  ],
+  "playbooks": [
+   {
+    "title": "Hosted AI chat for small teams",
+    "customer": "Small companies wanting ChatGPT with shared prompts",
+    "pricing": "$29\u2013$99/month",
+    "steps": [
+     "Host multi-tenant instances of LobeChat with per-team keys",
+     "Charge per team seat; your cost is one VPS",
+     "Sell shared prompt libraries as the differentiator"
+    ],
+    "timeToRevenue": "3\u20135 weeks"
+   },
+   {
+    "title": "Custom plugin development",
+    "customer": "Businesses wanting internal tools inside their AI chat",
+    "pricing": "$500\u2013$2,000 per plugin",
+    "steps": [
+     "Learn the LobeChat plugin API (one weekend)",
+     "Build a niche plugin (CRM lookup, order status, docs search)",
+     "Sell to companies already using LobeChat"
+    ],
+    "timeToRevenue": "3\u20136 weeks"
+   }
+  ],
+  "isPublished": true
+ },
+ {
+  "slug": "ollama",
+  "owner": "ollama",
+  "name": "ollama",
+  "githubUrl": "https://github.com/ollama/ollama",
+  "demoUrl": "https://ollama.com",
+  "description": "Run LLMs like Llama and Mistral locally \u2014 one command, zero cloud.",
+  "license": "MIT",
+  "licenseType": "safe",
+  "licenseNote": "MIT (the software). Model weights keep their own licenses \u2014 check each model page before commercial use.",
+  "techStack": [
+   "Go",
+   "llama.cpp"
+  ],
+  "difficulty": "Beginner",
+  "timeToLaunch": "< 1 hour",
+  "nicheSlugs": [
+   "local-llm"
+  ],
+  "isBestPick": true,
+  "stars": 105000,
+  "whatIsIt": "Ollama makes running open-source LLMs on your own machine as easy as `ollama run llama3`. It handles models, quantization, and a local API that any app can call \u2014 your data never leaves your hardware.",
+  "whereToUse": [
+   "Private AI apps with zero API cost",
+   "Offline/edge AI tools",
+   "Pairing with LibreChat/Open WebUI for a full local ChatGPT",
+   "Prototyping before paying for API tokens"
+  ],
+  "setup": [
+   "Install from ollama.com (one command for macOS/Linux; installer for Windows)",
+   "Run `ollama run llama3` \u2014 the model downloads and drops you into a chat",
+   "Point any app at the local API at `http://localhost:11434`",
+   "Serve a model: `curl http://localhost:11434/api/generate -d '{ \"model\": \"llama3\", \"prompt\": \"hi\" }'`"
+  ],
+  "configFiles": [
+   {
+    "filename": "docker-compose.yml",
+    "code": "services:\n  ollama:\n    image: ollama/ollama:latest\n    ports: ['11434:11434']\n    volumes: ['ollama:/root/.ollama']\n    restart: always\nvolumes:\n  ollama:"
+   }
+  ],
+  "playbooks": [
+   {
+    "title": "Local AI workstation setup",
+    "customer": "Privacy-focused professionals + enterprises with sensitive data",
+    "pricing": "$300\u2013$1,500 per setup",
+    "steps": [
+     "Install Ollama + a chat UI + RAG for their documents on their hardware",
+     "Deliver a working private AI with their files indexed",
+     "Offer an annual maintenance contract"
+    ],
+    "timeToRevenue": "1\u20132 weeks"
+   },
+   {
+    "title": "Offline AI tooling",
+    "customer": "Rural clinics, ships, field-work companies with no internet",
+    "pricing": "$2,000+ per engagement",
+    "steps": [
+     "Build domain-specific tools on Ollama that work offline",
+     "Pitch to industries where connectivity fails",
+     "Very few competitors \u2014 price accordingly"
+    ],
+    "timeToRevenue": "4\u20138 weeks"
+   },
+   {
+    "title": "Zero-cost prototyping service",
+    "customer": "AI-curious startups deciding what to build",
+    "pricing": "$500\u2013$1,000 fixed-price POC",
+    "steps": [
+     "Prototype their AI feature locally with Ollama (no API costs)",
+     "Demo with real-looking results",
+     "Upsell the production build on hosted models"
+    ],
+    "timeToRevenue": "1\u20133 weeks"
+   }
+  ],
+  "isPublished": true
+ },
+ {
+  "slug": "strapi",
+  "owner": "strapi",
+  "name": "strapi",
+  "githubUrl": "https://github.com/strapi/strapi",
+  "demoUrl": "https://strapi.io",
+  "description": "The leading open-source headless CMS \u2014 design your API visually, serve any frontend.",
+  "license": "BSL-1.1",
+  "licenseType": "warning",
+  "licenseNote": "\u26a0\ufe0f Strapi v5 uses Business Source License (BSL-1.1): production use is allowed under a revenue cap (check the current limit in their LICENSE file), but offering Strapi AS a hosted CMS service is restricted. Strapi v4 was MIT \u2014 read the exact version's license before building a product around it. Safe path: use v4 (MIT) or budget for an enterprise license.",
+  "techStack": [
+   "Node.js",
+   "TypeScript",
+   "React"
+  ],
+  "difficulty": "Intermediate",
+  "timeToLaunch": "1-2 days",
+  "nicheSlugs": [
+   "headless-cms"
+  ],
+  "isBestPick": false,
+  "stars": 68000,
+  "whatIsIt": "Strapi is the most popular open-source headless CMS: define your content types in a visual admin panel, and Strapi serves them as REST + GraphQL APIs to any frontend \u2014 web, mobile, whatever.",
+  "whereToUse": [
+   "Client sites where the marketing team must edit content",
+   "Multi-channel content (web + mobile + kiosk)",
+   "Replacing expensive proprietary CMS licenses"
+  ],
+  "setup": [
+   "`npx create-strapi-app@latest my-project --typescript`",
+   "Follow the prompts, then `npm run develop` to open the admin panel",
+   "Create content types in the Content-Type Builder, add entries, set permissions for the public API role",
+   "Fetch content via the auto-generated REST endpoints: `http://localhost:1337/api/articles`"
+  ],
+  "configFiles": [
+   {
+    "filename": "fetch-content.ts",
+    "code": "export async function getArticles() {\n  const res = await fetch('http://localhost:1337/api/articles?populate=cover', {\n    headers: { Authorization: `Bearer ${process.env.STRAPI_API_TOKEN}` },\n    next: { revalidate: 60 },\n  });\n  return res.json();\n}"
+   }
+  ],
+  "playbooks": [
+   {
+    "title": "Agency CMS builds",
+    "customer": "Marketing teams tired of paying developers for text edits",
+    "pricing": "$3,000\u2013$8,000 per site",
+    "steps": [
+     "Bundle: Strapi backend + Next.js frontend + editor training",
+     "The admin panel demo closes deals \u2014 clients love visual editors",
+     "Offer monthly content-support retainer"
+    ],
+    "timeToRevenue": "3\u20135 weeks"
+   },
+   {
+    "title": "Strapi consulting",
+    "customer": "Teams already running Strapi",
+    "pricing": "$100\u2013$200/hour",
+    "steps": [
+     "Fix migrations, permissions, and plugin issues (common pain points)",
+     "License-check their version for BSL compliance (a billable audit!)",
+     "Sell a fixed-price 'Strapi health check'"
+    ],
+    "timeToRevenue": "2\u20134 weeks"
+   }
+  ],
+  "isPublished": true
+ },
+ {
+  "slug": "umami",
+  "owner": "umami-software",
+  "name": "umami",
+  "githubUrl": "https://github.com/umami-software/umami",
+  "demoUrl": "https://umami.is",
+  "description": "Simple, privacy-first, open-source web analytics \u2014 the Google Analytics alternative without cookies.",
+  "license": "MIT",
+  "licenseType": "safe",
+  "licenseNote": "MIT \u2014 free for commercial use, including selling hosted instances.",
+  "techStack": [
+   "Node.js",
+   "Next.js",
+   "PostgreSQL/MySQL"
+  ],
+  "difficulty": "Beginner",
+  "timeToLaunch": "1-2 hours",
+  "nicheSlugs": [
+   "web-analytics"
+  ],
+  "isBestPick": true,
+  "stars": 24000,
+  "whatIsIt": "Umami is a self-hosted web analytics tool: page views, referrers, and events without cookies or personal data collection \u2014 making GDPR headaches mostly disappear. It's what you install when clients ask 'can we track visitors without the Google stuff?'",
+  "whereToUse": [
+   "Client sites needing GDPR-safe analytics",
+   "Your own portfolio/products (dogfood it)",
+   "Privacy-first hosting packages for European clients"
+  ],
+  "setup": [
+   "Deploy the official Docker image with a Postgres or MySQL database (compose file below)",
+   "Set `DATABASE_URL` and a random `UMAMI_SECRET` \u2014 the app runs its migrations on first boot",
+   "Open the app, create your account, add a website, and grab the tracking snippet",
+   "Paste the snippet into your site's <head> \u2014 done, no cookie banner required"
+  ],
+  "configFiles": [
+   {
+    "filename": "docker-compose.yml",
+    "code": "services:\n  umami:\n    image: ghcr.io/umami-software/umami:latest\n    ports: ['3000:3000']\n    environment:\n      DATABASE_URL: postgresql://umami:umami@db:5432/umami\n      UMAMI_SECRET: ${UMAMI_SECRET}\n    depends_on: [db]\n  db:\n    image: postgres:16\n    environment:\n      POSTGRES_DB: umami\n      POSTGRES_PASSWORD: umami"
+   }
+  ],
+  "playbooks": [
+   {
+    "title": "Privacy analytics hosting",
+    "customer": "European businesses + agencies fleeing Google Analytics",
+    "pricing": "$10\u2013$25/month per domain",
+    "steps": [
+     "Offer 'GDPR-safe analytics, hosted for you' packages",
+     "Stack: one VPS, 50+ client instances",
+     "Bundle with uptime monitoring for a 'privacy bundle'"
+    ],
+    "timeToRevenue": "2\u20134 weeks"
+   },
+   {
+    "title": "Analytics setup service",
+    "customer": "Non-technical site owners",
+    "pricing": "$99\u2013$199 flat",
+    "steps": [
+     "Install Umami on their VPS/hosting in under an hour",
+     "Add events for their key conversions, hand over a simple dashboard",
+     "Recurring maintenance fee for updates and backups"
+    ],
+    "timeToRevenue": "1 week"
+   }
+  ],
+  "isPublished": true
+ },
+ {
+  "slug": "excalidraw",
+  "owner": "excalidraw",
+  "name": "excalidraw",
+  "githubUrl": "https://github.com/excalidraw/excalidraw",
+  "demoUrl": "https://excalidraw.com",
+  "description": "The virtual hand-drawn-style whiteboard \u2014 sketch diagrams that people actually enjoy.",
+  "license": "MIT",
+  "licenseType": "safe",
+  "licenseNote": "MIT \u2014 free for commercial use. The npm package (excalidraw npm) makes embedding trivial.",
+  "techStack": [
+   "React",
+   "TypeScript"
+  ],
+  "difficulty": "Beginner",
+  "timeToLaunch": "1-2 hours",
+  "nicheSlugs": [
+   "notes-knowledge",
+   "design-tools"
+  ],
+  "isBestPick": false,
+  "stars": 92000,
+  "whatIsIt": "Excalidraw is the whiteboard everyone loves: hand-drawn-style diagrams, flowcharts, and wireframes in the browser. The npm package lets you embed the whole canvas in any React app.",
+  "whereToUse": [
+   "Embedding a collaborative whiteboard in your SaaS",
+   "Architecture diagramming in documentation tools",
+   "Workshop/presentation tools for course creators"
+  ],
+  "setup": [
+   "Install: `npm install @excalidraw/excalidraw`",
+   "Import and render `<Excalidraw />` \u2014 a full whiteboard in one component",
+   "Persist scenes to your own backend via the onChange/onUpdate handlers"
+  ],
+  "configFiles": [
+   {
+    "filename": "whiteboard.tsx",
+    "code": "import { Excalidraw } from '@excalidraw/excalidraw';\n\nexport function Whiteboard() {\n  return <Excalidraw />;\n}"
+   }
+  ],
+  "playbooks": [
+   {
+    "title": "Whiteboard-in-a-product",
+    "customer": "Ed-tech, agency, and PM tool builders",
+    "pricing": "$2,000\u2013$6,000 per integration",
+    "steps": [
+     "Add 'live whiteboard' to an existing niche tool using the npm package",
+     "Pitch tools whose users already paste screenshots of diagrams",
+     "Charge for the feature, not the component \u2014 it's one day of work"
+    ],
+    "timeToRevenue": "3\u20134 weeks"
+   },
+   {
+    "title": "Diagram services",
+    "customer": "Devs + teams with ugly architecture diagrams",
+    "pricing": "$50\u2013$150 per diagram",
+    "steps": [
+     "Sell polished Excalidraw versions of messy diagrams",
+     "One diagram takes 30\u201360 min once you're fast",
+     "Sell packs: 'your whole system, redrawn'"
+    ],
+    "timeToRevenue": "1 week"
+   }
+  ],
+  "isPublished": true
+ }
+]

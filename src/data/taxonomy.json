@@ -1,0 +1,910 @@
+{
+ "categories": [
+  {
+   "id": "frontend-ui",
+   "slug": "frontend-ui",
+   "name": "Frontend & UI",
+   "icon": "Layout",
+   "description": "Component libraries, CSS frameworks, dashboards, forms, tables and charts.",
+   "order": 1
+  },
+  {
+   "id": "animation-motion",
+   "slug": "animation-motion",
+   "name": "Animation & Motion",
+   "icon": "Sparkles",
+   "description": "Web animation engines, scroll effects, 3D/WebGL and micro-interactions.",
+   "order": 2
+  },
+  {
+   "id": "backend-apis",
+   "slug": "backend-apis",
+   "name": "Backend & APIs",
+   "icon": "Server",
+   "description": "Backend frameworks, BaaS, auth, storage, webhooks and realtime.",
+   "order": 3
+  },
+  {
+   "id": "databases-data",
+   "slug": "databases-data",
+   "name": "Databases & Data",
+   "icon": "Database",
+   "description": "SQL, NoSQL, vector stores, ORMs, caching and migrations.",
+   "order": 4
+  },
+  {
+   "id": "ai-ml",
+   "slug": "ai-ml",
+   "name": "AI & Machine Learning",
+   "icon": "BrainCircuit",
+   "description": "LLM chat UIs, local runtimes, RAG, agents, image, voice and video AI.",
+   "order": 5
+  },
+  {
+   "id": "ecommerce",
+   "slug": "ecommerce",
+   "name": "E-commerce",
+   "icon": "ShoppingCart",
+   "description": "Storefronts, headless commerce, marketplaces, payments and inventory.",
+   "order": 6
+  },
+  {
+   "id": "content-cms",
+   "slug": "content-cms",
+   "name": "Content & CMS",
+   "icon": "FileText",
+   "description": "Headless CMS, blogs, docs, wikis, newsletters and forms.",
+   "order": 7
+  },
+  {
+   "id": "analytics",
+   "slug": "analytics",
+   "name": "Analytics & Tracking",
+   "icon": "BarChart3",
+   "description": "Web analytics, product analytics, session replay, BI and uptime.",
+   "order": 8
+  },
+  {
+   "id": "dev-tools",
+   "slug": "dev-tools",
+   "name": "Dev Tools",
+   "icon": "Wrench",
+   "description": "Editors, API testing, git hosting, terminals and code generation.",
+   "order": 9
+  },
+  {
+   "id": "devops",
+   "slug": "devops",
+   "name": "Deployment & DevOps",
+   "icon": "Rocket",
+   "description": "Self-hosting, reverse proxies, CI/CD, containers and monitoring.",
+   "order": 10
+  },
+  {
+   "id": "security-auth",
+   "slug": "security-auth",
+   "name": "Security & Auth",
+   "icon": "Shield",
+   "description": "SSO, password managers, 2FA, scanning, VPN and secrets.",
+   "order": 11
+  },
+  {
+   "id": "communication",
+   "slug": "communication",
+   "name": "Communication",
+   "icon": "MessageCircle",
+   "description": "Team chat, live chat, email, chatbots and video calls.",
+   "order": 12
+  },
+  {
+   "id": "productivity-business",
+   "slug": "productivity-business",
+   "name": "Productivity & Business",
+   "icon": "Briefcase",
+   "description": "CRM, PM, notes, invoicing, HR, booking and automation.",
+   "order": 13
+  },
+  {
+   "id": "media-creative",
+   "slug": "media-creative",
+   "name": "Media & Creative",
+   "icon": "Palette",
+   "description": "Image, video, audio, streaming, design tools and 3D.",
+   "order": 14
+  },
+  {
+   "id": "games-fun",
+   "slug": "games-fun",
+   "name": "Games & Fun",
+   "icon": "Gamepad2",
+   "description": "Game engines, JS game libs, retro emulators and toys.",
+   "order": 15
+  },
+  {
+   "id": "scraping",
+   "slug": "scraping",
+   "name": "Scraping & Extraction",
+   "icon": "Search",
+   "description": "Scrapers, crawlers, parsers, datasets and trackers.",
+   "order": 16
+  },
+  {
+   "id": "automation-bots",
+   "slug": "automation-bots",
+   "name": "Automation & Bots",
+   "icon": "Bot",
+   "description": "Workflow automation, social/messaging bots, browser automation.",
+   "order": 17
+  },
+  {
+   "id": "mobile-desktop",
+   "slug": "mobile-desktop",
+   "name": "Mobile & Desktop",
+   "icon": "MonitorSmartphone",
+   "description": "Cross-platform, desktop apps and PWAs.",
+   "order": 18
+  },
+  {
+   "id": "iot-hardware",
+   "slug": "iot-hardware",
+   "name": "IoT & Hardware",
+   "icon": "Cpu",
+   "description": "Home automation, smart home dashboards and device hubs.",
+   "order": 19
+  },
+  {
+   "id": "learning-docs",
+   "slug": "learning-docs",
+   "name": "Learning & Docs",
+   "icon": "GraduationCap",
+   "description": "Coding education, interactive tutorials, cheat sheets, interview prep.",
+   "order": 20
+  }
+ ],
+ "niches": [
+  {
+   "id": "component-libraries",
+   "slug": "component-libraries",
+   "name": "Component Libraries",
+   "categorySlug": "frontend-ui"
+  },
+  {
+   "id": "css-frameworks",
+   "slug": "css-frameworks",
+   "name": "CSS Frameworks",
+   "categorySlug": "frontend-ui"
+  },
+  {
+   "id": "icons",
+   "slug": "icons",
+   "name": "Icons",
+   "categorySlug": "frontend-ui"
+  },
+  {
+   "id": "dashboards-admin",
+   "slug": "dashboards-admin",
+   "name": "Dashboards & Admin Panels",
+   "categorySlug": "frontend-ui"
+  },
+  {
+   "id": "landing-templates",
+   "slug": "landing-templates",
+   "name": "Landing Page Templates",
+   "categorySlug": "frontend-ui"
+  },
+  {
+   "id": "form-builders",
+   "slug": "form-builders",
+   "name": "Form Builders",
+   "categorySlug": "frontend-ui"
+  },
+  {
+   "id": "tables-datagrids",
+   "slug": "tables-datagrids",
+   "name": "Tables & Datagrids",
+   "categorySlug": "frontend-ui"
+  },
+  {
+   "id": "charts",
+   "slug": "charts",
+   "name": "Charts",
+   "categorySlug": "frontend-ui"
+  },
+  {
+   "id": "web-animation",
+   "slug": "web-animation",
+   "name": "Web Animation",
+   "categorySlug": "animation-motion"
+  },
+  {
+   "id": "scroll-animation",
+   "slug": "scroll-animation",
+   "name": "Scroll Animation",
+   "categorySlug": "animation-motion"
+  },
+  {
+   "id": "3d-webgl",
+   "slug": "3d-webgl",
+   "name": "3D & WebGL",
+   "categorySlug": "animation-motion"
+  },
+  {
+   "id": "svg-animation",
+   "slug": "svg-animation",
+   "name": "SVG Animation",
+   "categorySlug": "animation-motion"
+  },
+  {
+   "id": "page-transitions",
+   "slug": "page-transitions",
+   "name": "Page Transitions",
+   "categorySlug": "animation-motion"
+  },
+  {
+   "id": "micro-interactions",
+   "slug": "micro-interactions",
+   "name": "Micro-interactions",
+   "categorySlug": "animation-motion"
+  },
+  {
+   "id": "backend-frameworks",
+   "slug": "backend-frameworks",
+   "name": "Backend Frameworks",
+   "categorySlug": "backend-apis"
+  },
+  {
+   "id": "baas",
+   "slug": "baas",
+   "name": "Backend-as-a-Service",
+   "categorySlug": "backend-apis"
+  },
+  {
+   "id": "api-gateways",
+   "slug": "api-gateways",
+   "name": "API Gateways",
+   "categorySlug": "backend-apis"
+  },
+  {
+   "id": "authentication",
+   "slug": "authentication",
+   "name": "Authentication",
+   "categorySlug": "backend-apis"
+  },
+  {
+   "id": "file-storage",
+   "slug": "file-storage",
+   "name": "File Storage",
+   "categorySlug": "backend-apis"
+  },
+  {
+   "id": "webhooks",
+   "slug": "webhooks",
+   "name": "Webhooks",
+   "categorySlug": "backend-apis"
+  },
+  {
+   "id": "realtime-sockets",
+   "slug": "realtime-sockets",
+   "name": "Realtime & Sockets",
+   "categorySlug": "backend-apis"
+  },
+  {
+   "id": "serverless",
+   "slug": "serverless",
+   "name": "Serverless",
+   "categorySlug": "backend-apis"
+  },
+  {
+   "id": "sql",
+   "slug": "sql",
+   "name": "SQL Databases",
+   "categorySlug": "databases-data"
+  },
+  {
+   "id": "nosql",
+   "slug": "nosql",
+   "name": "NoSQL Databases",
+   "categorySlug": "databases-data"
+  },
+  {
+   "id": "vector-databases",
+   "slug": "vector-databases",
+   "name": "Vector Databases",
+   "categorySlug": "databases-data"
+  },
+  {
+   "id": "orm-query-builders",
+   "slug": "orm-query-builders",
+   "name": "ORM & Query Builders",
+   "categorySlug": "databases-data"
+  },
+  {
+   "id": "caching",
+   "slug": "caching",
+   "name": "Caching",
+   "categorySlug": "databases-data"
+  },
+  {
+   "id": "migrations",
+   "slug": "migrations",
+   "name": "Migrations",
+   "categorySlug": "databases-data"
+  },
+  {
+   "id": "spreadsheets-as-db",
+   "slug": "spreadsheets-as-db",
+   "name": "Spreadsheets as Database",
+   "categorySlug": "databases-data"
+  },
+  {
+   "id": "llm-chat-ui",
+   "slug": "llm-chat-ui",
+   "name": "LLM Chat UIs",
+   "categorySlug": "ai-ml"
+  },
+  {
+   "id": "local-llm",
+   "slug": "local-llm",
+   "name": "Local LLM Runtimes",
+   "categorySlug": "ai-ml"
+  },
+  {
+   "id": "rag-document-chat",
+   "slug": "rag-document-chat",
+   "name": "RAG & Document Chat",
+   "categorySlug": "ai-ml"
+  },
+  {
+   "id": "ai-agents",
+   "slug": "ai-agents",
+   "name": "AI Agents & Workflows",
+   "categorySlug": "ai-ml"
+  },
+  {
+   "id": "image-generation",
+   "slug": "image-generation",
+   "name": "Image Generation",
+   "categorySlug": "ai-ml"
+  },
+  {
+   "id": "voice-tts",
+   "slug": "voice-tts",
+   "name": "Voice & TTS",
+   "categorySlug": "ai-ml"
+  },
+  {
+   "id": "transcription",
+   "slug": "transcription",
+   "name": "Transcription",
+   "categorySlug": "ai-ml"
+  },
+  {
+   "id": "video-ai",
+   "slug": "video-ai",
+   "name": "Video AI",
+   "categorySlug": "ai-ml"
+  },
+  {
+   "id": "ml-training",
+   "slug": "ml-training",
+   "name": "ML Training Tools",
+   "categorySlug": "ai-ml"
+  },
+  {
+   "id": "storefront",
+   "slug": "storefront",
+   "name": "Storefronts",
+   "categorySlug": "ecommerce"
+  },
+  {
+   "id": "headless-commerce",
+   "slug": "headless-commerce",
+   "name": "Headless Commerce",
+   "categorySlug": "ecommerce"
+  },
+  {
+   "id": "marketplaces",
+   "slug": "marketplaces",
+   "name": "Marketplaces",
+   "categorySlug": "ecommerce"
+  },
+  {
+   "id": "digital-products",
+   "slug": "digital-products",
+   "name": "Digital Products",
+   "categorySlug": "ecommerce"
+  },
+  {
+   "id": "payments-checkout",
+   "slug": "payments-checkout",
+   "name": "Payments & Checkout",
+   "categorySlug": "ecommerce"
+  },
+  {
+   "id": "inventory",
+   "slug": "inventory",
+   "name": "Inventory",
+   "categorySlug": "ecommerce"
+  },
+  {
+   "id": "headless-cms",
+   "slug": "headless-cms",
+   "name": "Headless CMS",
+   "categorySlug": "content-cms"
+  },
+  {
+   "id": "blogs-publishing",
+   "slug": "blogs-publishing",
+   "name": "Blogs & Publishing",
+   "categorySlug": "content-cms"
+  },
+  {
+   "id": "docs-sites",
+   "slug": "docs-sites",
+   "name": "Docs Sites",
+   "categorySlug": "content-cms"
+  },
+  {
+   "id": "wikis-knowledge",
+   "slug": "wikis-knowledge",
+   "name": "Wikis & Knowledge Bases",
+   "categorySlug": "content-cms"
+  },
+  {
+   "id": "newsletters",
+   "slug": "newsletters",
+   "name": "Newsletters",
+   "categorySlug": "content-cms"
+  },
+  {
+   "id": "forms-surveys",
+   "slug": "forms-surveys",
+   "name": "Forms & Surveys",
+   "categorySlug": "content-cms"
+  },
+  {
+   "id": "web-analytics",
+   "slug": "web-analytics",
+   "name": "Web Analytics",
+   "categorySlug": "analytics"
+  },
+  {
+   "id": "product-analytics",
+   "slug": "product-analytics",
+   "name": "Product Analytics",
+   "categorySlug": "analytics"
+  },
+  {
+   "id": "session-replay",
+   "slug": "session-replay",
+   "name": "Session Replay",
+   "categorySlug": "analytics"
+  },
+  {
+   "id": "dashboards-bi",
+   "slug": "dashboards-bi",
+   "name": "Dashboards & BI",
+   "categorySlug": "analytics"
+  },
+  {
+   "id": "ab-testing",
+   "slug": "ab-testing",
+   "name": "A/B Testing",
+   "categorySlug": "analytics"
+  },
+  {
+   "id": "uptime-monitoring",
+   "slug": "uptime-monitoring",
+   "name": "Uptime Monitoring",
+   "categorySlug": "analytics"
+  },
+  {
+   "id": "code-editors",
+   "slug": "code-editors",
+   "name": "Code Editors",
+   "categorySlug": "dev-tools"
+  },
+  {
+   "id": "api-testing",
+   "slug": "api-testing",
+   "name": "API Testing",
+   "categorySlug": "dev-tools"
+  },
+  {
+   "id": "git-hosting",
+   "slug": "git-hosting",
+   "name": "Git Hosting",
+   "categorySlug": "dev-tools"
+  },
+  {
+   "id": "terminals",
+   "slug": "terminals",
+   "name": "Terminals",
+   "categorySlug": "dev-tools"
+  },
+  {
+   "id": "snippets",
+   "slug": "snippets",
+   "name": "Snippets",
+   "categorySlug": "dev-tools"
+  },
+  {
+   "id": "regex-json",
+   "slug": "regex-json",
+   "name": "Regex & JSON Tools",
+   "categorySlug": "dev-tools"
+  },
+  {
+   "id": "code-generation",
+   "slug": "code-generation",
+   "name": "Code Generation",
+   "categorySlug": "dev-tools"
+  },
+  {
+   "id": "self-hosting",
+   "slug": "self-hosting",
+   "name": "Self-hosting Platforms",
+   "categorySlug": "devops"
+  },
+  {
+   "id": "reverse-proxies",
+   "slug": "reverse-proxies",
+   "name": "Reverse Proxies",
+   "categorySlug": "devops"
+  },
+  {
+   "id": "ci-cd",
+   "slug": "ci-cd",
+   "name": "CI/CD",
+   "categorySlug": "devops"
+  },
+  {
+   "id": "containers",
+   "slug": "containers",
+   "name": "Containers",
+   "categorySlug": "devops"
+  },
+  {
+   "id": "monitoring-stacks",
+   "slug": "monitoring-stacks",
+   "name": "Monitoring Stacks",
+   "categorySlug": "devops"
+  },
+  {
+   "id": "one-click-deploy",
+   "slug": "one-click-deploy",
+   "name": "One-click Deploy",
+   "categorySlug": "devops"
+  },
+  {
+   "id": "sso-identity",
+   "slug": "sso-identity",
+   "name": "SSO & Identity",
+   "categorySlug": "security-auth"
+  },
+  {
+   "id": "password-managers",
+   "slug": "password-managers",
+   "name": "Password Managers",
+   "categorySlug": "security-auth"
+  },
+  {
+   "id": "2fa",
+   "slug": "2fa",
+   "name": "2FA",
+   "categorySlug": "security-auth"
+  },
+  {
+   "id": "vulnerability-scanning",
+   "slug": "vulnerability-scanning",
+   "name": "Vulnerability Scanning",
+   "categorySlug": "security-auth"
+  },
+  {
+   "id": "vpn-privacy",
+   "slug": "vpn-privacy",
+   "name": "VPN & Privacy",
+   "categorySlug": "security-auth"
+  },
+  {
+   "id": "secrets-management",
+   "slug": "secrets-management",
+   "name": "Secrets Management",
+   "categorySlug": "security-auth"
+  },
+  {
+   "id": "team-chat",
+   "slug": "team-chat",
+   "name": "Team Chat",
+   "categorySlug": "communication"
+  },
+  {
+   "id": "live-chat-support",
+   "slug": "live-chat-support",
+   "name": "Live Chat & Support",
+   "categorySlug": "communication"
+  },
+  {
+   "id": "email-platforms",
+   "slug": "email-platforms",
+   "name": "Email Platforms",
+   "categorySlug": "communication"
+  },
+  {
+   "id": "chatbots",
+   "slug": "chatbots",
+   "name": "Chatbots",
+   "categorySlug": "communication"
+  },
+  {
+   "id": "messaging-bots",
+   "slug": "messaging-bots",
+   "name": "Messaging Bots",
+   "categorySlug": "communication"
+  },
+  {
+   "id": "video-conferencing",
+   "slug": "video-conferencing",
+   "name": "Video Conferencing",
+   "categorySlug": "communication"
+  },
+  {
+   "id": "crm",
+   "slug": "crm",
+   "name": "CRM",
+   "categorySlug": "productivity-business"
+  },
+  {
+   "id": "project-management",
+   "slug": "project-management",
+   "name": "Project Management",
+   "categorySlug": "productivity-business"
+  },
+  {
+   "id": "notes-knowledge",
+   "slug": "notes-knowledge",
+   "name": "Notes & Knowledge",
+   "categorySlug": "productivity-business"
+  },
+  {
+   "id": "to-do",
+   "slug": "to-do",
+   "name": "To-do",
+   "categorySlug": "productivity-business"
+  },
+  {
+   "id": "invoicing-billing",
+   "slug": "invoicing-billing",
+   "name": "Invoicing & Billing",
+   "categorySlug": "productivity-business"
+  },
+  {
+   "id": "hr",
+   "slug": "hr",
+   "name": "HR",
+   "categorySlug": "productivity-business"
+  },
+  {
+   "id": "booking-scheduling",
+   "slug": "booking-scheduling",
+   "name": "Booking & Scheduling",
+   "categorySlug": "productivity-business"
+  },
+  {
+   "id": "e-signatures",
+   "slug": "e-signatures",
+   "name": "E-signatures",
+   "categorySlug": "productivity-business"
+  },
+  {
+   "id": "automation-no-code",
+   "slug": "automation-no-code",
+   "name": "Automation & No-code",
+   "categorySlug": "productivity-business"
+  },
+  {
+   "id": "image-editing",
+   "slug": "image-editing",
+   "name": "Image Editing",
+   "categorySlug": "media-creative"
+  },
+  {
+   "id": "video-editing",
+   "slug": "video-editing",
+   "name": "Video Editing",
+   "categorySlug": "media-creative"
+  },
+  {
+   "id": "audio-music",
+   "slug": "audio-music",
+   "name": "Audio & Music",
+   "categorySlug": "media-creative"
+  },
+  {
+   "id": "screen-recording",
+   "slug": "screen-recording",
+   "name": "Screen Recording",
+   "categorySlug": "media-creative"
+  },
+  {
+   "id": "streaming-tools",
+   "slug": "streaming-tools",
+   "name": "Streaming Tools",
+   "categorySlug": "media-creative"
+  },
+  {
+   "id": "design-tools",
+   "slug": "design-tools",
+   "name": "Design Tools",
+   "categorySlug": "media-creative"
+  },
+  {
+   "id": "3d-modeling",
+   "slug": "3d-modeling",
+   "name": "3D Modeling",
+   "categorySlug": "media-creative"
+  },
+  {
+   "id": "fonts",
+   "slug": "fonts",
+   "name": "Fonts",
+   "categorySlug": "media-creative"
+  },
+  {
+   "id": "game-engines",
+   "slug": "game-engines",
+   "name": "Game Engines",
+   "categorySlug": "games-fun"
+  },
+  {
+   "id": "js-game-libraries",
+   "slug": "js-game-libraries",
+   "name": "JS Game Libraries",
+   "categorySlug": "games-fun"
+  },
+  {
+   "id": "retro-emulators",
+   "slug": "retro-emulators",
+   "name": "Retro Emulators",
+   "categorySlug": "games-fun"
+  },
+  {
+   "id": "interactive-toys",
+   "slug": "interactive-toys",
+   "name": "Interactive Toys",
+   "categorySlug": "games-fun"
+  },
+  {
+   "id": "web-scrapers",
+   "slug": "web-scrapers",
+   "name": "Web Scrapers",
+   "categorySlug": "scraping"
+  },
+  {
+   "id": "crawlers",
+   "slug": "crawlers",
+   "name": "Crawlers",
+   "categorySlug": "scraping"
+  },
+  {
+   "id": "parsers",
+   "slug": "parsers",
+   "name": "Parsers",
+   "categorySlug": "scraping"
+  },
+  {
+   "id": "datasets",
+   "slug": "datasets",
+   "name": "Datasets",
+   "categorySlug": "scraping"
+  },
+  {
+   "id": "trackers",
+   "slug": "trackers",
+   "name": "Trackers",
+   "categorySlug": "scraping"
+  },
+  {
+   "id": "workflow-automation",
+   "slug": "workflow-automation",
+   "name": "Workflow Automation",
+   "categorySlug": "automation-bots"
+  },
+  {
+   "id": "social-media-bots",
+   "slug": "social-media-bots",
+   "name": "Social Media Bots",
+   "categorySlug": "automation-bots"
+  },
+  {
+   "id": "telegram-bots",
+   "slug": "telegram-bots",
+   "name": "Telegram Bots",
+   "categorySlug": "automation-bots"
+  },
+  {
+   "id": "discord-bots",
+   "slug": "discord-bots",
+   "name": "Discord Bots",
+   "categorySlug": "automation-bots"
+  },
+  {
+   "id": "whatsapp-bots",
+   "slug": "whatsapp-bots",
+   "name": "WhatsApp Bots",
+   "categorySlug": "automation-bots"
+  },
+  {
+   "id": "browser-automation",
+   "slug": "browser-automation",
+   "name": "Browser Automation",
+   "categorySlug": "automation-bots"
+  },
+  {
+   "id": "cross-platform",
+   "slug": "cross-platform",
+   "name": "Cross-platform",
+   "categorySlug": "mobile-desktop"
+  },
+  {
+   "id": "desktop-apps",
+   "slug": "desktop-apps",
+   "name": "Desktop Apps",
+   "categorySlug": "mobile-desktop"
+  },
+  {
+   "id": "pwas",
+   "slug": "pwas",
+   "name": "PWAs",
+   "categorySlug": "mobile-desktop"
+  },
+  {
+   "id": "native-helpers",
+   "slug": "native-helpers",
+   "name": "Native Helpers",
+   "categorySlug": "mobile-desktop"
+  },
+  {
+   "id": "home-automation",
+   "slug": "home-automation",
+   "name": "Home Automation",
+   "categorySlug": "iot-hardware"
+  },
+  {
+   "id": "smart-home-dashboards",
+   "slug": "smart-home-dashboards",
+   "name": "Smart Home Dashboards",
+   "categorySlug": "iot-hardware"
+  },
+  {
+   "id": "device-hubs",
+   "slug": "device-hubs",
+   "name": "Device Hubs",
+   "categorySlug": "iot-hardware"
+  },
+  {
+   "id": "coding-education",
+   "slug": "coding-education",
+   "name": "Coding Education",
+   "categorySlug": "learning-docs"
+  },
+  {
+   "id": "interactive-tutorials",
+   "slug": "interactive-tutorials",
+   "name": "Interactive Tutorials",
+   "categorySlug": "learning-docs"
+  },
+  {
+   "id": "cheat-sheets",
+   "slug": "cheat-sheets",
+   "name": "Cheat Sheets",
+   "categorySlug": "learning-docs"
+  },
+  {
+   "id": "interview-prep",
+   "slug": "interview-prep",
+   "name": "Interview Prep",
+   "categorySlug": "learning-docs"
+  }
+ ]
+}
