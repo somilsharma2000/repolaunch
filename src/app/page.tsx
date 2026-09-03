@@ -25,13 +25,9 @@ export default function HomePage() {
 
       {/* HERO */}
       <section className="facet-texture relative mx-auto flex max-w-6xl flex-col items-center px-4 pb-20 pt-20 text-center">
-        <Image
-          src={asset("/crown-logo.png")}
-          alt=""
-          width={72}
-          height={72}
-          className="fade-up mb-2 opacity-95"
-        />
+        <div className="fade-up mb-3 grid h-24 w-24 place-items-center rounded-2xl border border-gold/25 bg-black/50 p-3 shadow-[0_0_40px_-8px_rgba(245,192,94,0.35)]">
+          <Image src={asset("/crown-logo.png")} alt="RepoLaunch" width={68} height={68} className="rounded" />
+        </div>
         <span className="fade-up rounded-full border border-gold/30 bg-gold/5 px-4 py-1.5 text-xs text-goldlight/90">
           👑 {stats.repos}+ verified open-source repos, mapped to every niche
         </span>

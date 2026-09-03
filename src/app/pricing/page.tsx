@@ -13,7 +13,9 @@ export default function PricingPage() {
 
   return (
     <div className="mx-auto max-w-4xl px-4 py-16 text-center">
-      <Image src={asset("/crown-logo.png")} alt="" width={56} height={56} className="mx-auto mb-4 opacity-95" />
+      <div className="mx-auto mb-4 grid h-20 w-20 place-items-center rounded-2xl border border-gold/25 bg-black/50 p-2.5">
+        <Image src={asset("/crown-logo.png")} alt="RepoLaunch" width={56} height={56} className="rounded" />
+      </div>
       <h1 className="text-4xl font-extrabold">
         One payment. <span className="gradient-text">Forever.</span>
       </h1>
