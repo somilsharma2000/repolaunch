@@ -1,14 +1,14 @@
 {
-  "juliangarnier/anime": 75114,
-  "motiondivision/motion": 35606,
+  "juliangarnier/anime": 75152,
+  "motiondivision/motion": 35664,
   "formkit/auto-animate": 13973,
-  "mrdoob/three.js": 119484,
-  "pocketbase/pocketbase": 61578,
-  "supabase/supabase": 115564,
-  "danny-avila/LibreChat": 47566,
-  "lobehub/lobe-chat": 86187,
-  "ollama/ollama": 188244,
-  "strapi/strapi": 73558,
-  "umami-software/umami": 40404,
-  "excalidraw/excalidraw": 136371
+  "mrdoob/three.js": 119572,
+  "pocketbase/pocketbase": 61586,
+  "supabase/supabase": 115492,
+  "danny-avila/LibreChat": 47592,
+  "lobehub/lobe-chat": 86208,
+  "ollama/ollama": 188326,
+  "strapi/strapi": 73570,
+  "umami-software/umami": 40442,
+  "excalidraw/excalidraw": 136410
 }
